@@ -20,7 +20,7 @@ module.exports = webpackMerge(base, {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
-                use: ['css-loader', 'postcss-loader']
+                use: ['css-loader', 'postcss-loader','less-loader']
             })
         }]
     },

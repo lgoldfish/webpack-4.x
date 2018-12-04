@@ -21,10 +21,10 @@ module.exports = webpackMerge(base, {
     },
     module: {
         rules: [
-
+           
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader']
+                test: /\.(css | less)$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader','less-loader']
             }
 
         ]
